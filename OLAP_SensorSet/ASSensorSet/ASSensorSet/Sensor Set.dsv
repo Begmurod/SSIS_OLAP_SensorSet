@@ -1,0 +1,150 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3eed43f9-2428-498a-a8f0-f4d081b15560" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sensor Set</ID>
+  <Name>Sensor Set</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>SensorSet</DataSourceID>
+  <Schema>
+    <xs:schema id="Sensor_x0020_Set" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Sensor_x0020_Set" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="24875097-45c6-4f6c-a1f3-c335eb788445">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Date" msprop:design-time-name="625c0a16-7421-44ad-83c7-5eaa7aa2299d" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Date" msprop:design-time-name="30c3043f-2fd3-48b9-b0dc-be8642c16048" msprop:DbColumnName="ID_Date" msprop:FriendlyName="ID_Date" type="xs:dateTime" />
+                  <xs:element name="SecondFromDate" msdata:ReadOnly="true" msprop:design-time-name="bb279eb7-34b9-407e-9697-44f5e9015eb3" msprop:DbColumnName="SecondFromDate" msprop:FriendlyName="SecondFromDate" type="xs:int" minOccurs="0" />
+                  <xs:element name="MinuteFromDate" msdata:ReadOnly="true" msprop:design-time-name="633f2d11-5700-4226-b551-8441db800dfd" msprop:DbColumnName="MinuteFromDate" msprop:FriendlyName="MinuteFromDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="HourFromDate" msdata:ReadOnly="true" msprop:design-time-name="6c6c8672-14d3-4094-ad42-3c3e5889c80f" msprop:DbColumnName="HourFromDate" msprop:FriendlyName="HourFromDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DayFromDate" msdata:ReadOnly="true" msprop:design-time-name="4b0e50ac-db13-4b06-bf66-254ef2e55f5e" msprop:DbColumnName="DayFromDate" msprop:FriendlyName="DayFromDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthFromDate" msdata:ReadOnly="true" msprop:design-time-name="73a13601-3809-4383-b5e2-784b0cb9ed75" msprop:DbColumnName="MonthFromDate" msprop:FriendlyName="MonthFromDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="YearFromDate" msdata:ReadOnly="true" msprop:design-time-name="0d887abb-5cae-4761-8c00-adb1cd482b1b" msprop:DbColumnName="YearFromDate" msprop:FriendlyName="YearFromDate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Indicators" msprop:design-time-name="b7373033-9cf9-48c7-a791-ad0b997172a8" msprop:DbTableName="Fact_Indicators" msprop:FriendlyName="Fact_Indicators" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Date" msprop:design-time-name="af779167-d271-4825-b142-5865eef8ed64" msprop:DbColumnName="ID_Date" msprop:FriendlyName="ID_Date" type="xs:dateTime" />
+                  <xs:element name="OID_Equipment" msprop:design-time-name="c6e5bba4-0be5-4f29-b30b-f4f8beb5708c" msprop:DbColumnName="OID_Equipment" msprop:FriendlyName="OID_Equipment" type="xs:long" />
+                  <xs:element name="NumericParam" msprop:design-time-name="90b73f6d-47dc-4c2a-904c-ea78fb80f356" msprop:DbColumnName="NumericParam" msprop:FriendlyName="NumericParam" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="MeasurandGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="c6383101-fbae-4204-bab9-7158a07147b5" msprop:DbColumnName="MeasurandGUID" msprop:FriendlyName="MeasurandGUID" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Equipment" msprop:design-time-name="2ff31aa9-dfff-4c4b-9443-9907dc65042a" msprop:DbTableName="Dim_Equipment" msprop:FriendlyName="Dim_Equipment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="OID_Equipment" msprop:design-time-name="10303847-8d37-48b1-a23a-2b6dbbd61655" msprop:DbColumnName="OID_Equipment" msprop:FriendlyName="OID_Equipment" type="xs:long" />
+                  <xs:element name="InventoryNumber" msprop:design-time-name="f42cacbd-58c0-4246-b16e-546ba9eab759" msprop:DbColumnName="InventoryNumber" msprop:FriendlyName="InventoryNumber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SerialNumber" msprop:design-time-name="d410815f-9252-49d9-b5ef-99d58cb63f4e" msprop:DbColumnName="SerialNumber" msprop:FriendlyName="SerialNumber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="64" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EquipmentTypeGUID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="d248120c-e52f-4c99-803c-b2fb3074f04f" msprop:DbColumnName="EquipmentTypeGUID" msprop:FriendlyName="EquipmentTypeGUID" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="ID_Date" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Indicators_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Indicators" />
+          <xs:field xpath="ID_Date" />
+          <xs:field xpath="OID_Equipment" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Equipment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Equipment" />
+          <xs:field xpath="OID_Equipment" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Indicators_Dim_Equipment" refer="dbo_Dim_Equipment_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Indicators" />
+          <xs:field xpath="OID_Equipment" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Indicators_Dim_Date" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Indicators" />
+          <xs:field xpath="ID_Date" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Sensor_x0020_Set xmlns="" />
+  </Schema>
+</DataSourceView>
